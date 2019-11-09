@@ -434,6 +434,8 @@ GameObject:
   - component: {fileID: 763706390}
   - component: {fileID: 763706389}
   - component: {fileID: 763706392}
+  - component: {fileID: 763706393}
+  - component: {fileID: 763706394}
   m_Layer: 0
   m_Name: bird
   m_TagString: Untagged
@@ -537,6 +539,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpHeight: 1
   Death: 0
+--- !u!50 &763706393
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706388}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &763706394
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763706388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.023979396}
+  serializedVersion: 2
+  m_Radius: 0.1360206
 --- !u!1 &824972123
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +723,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 32ee5b4f49460c647a9f0a8d412bde6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1193,6 +1232,7 @@ GameObject:
   - component: {fileID: 1622883334}
   - component: {fileID: 1622883333}
   - component: {fileID: 1622883335}
+  - component: {fileID: 1622883336}
   m_Layer: 0
   m_Name: "\u5730\u677F"
   m_TagString: Untagged
@@ -1275,7 +1315,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257cf728accced342b932ade11205c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1
+  ground: {fileID: 1622883334}
+--- !u!61 &1622883336
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622883332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 50.05, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50.5, y: 0.25}
+  m_EdgeRadius: 0
 --- !u!1 &1791739873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1514,7 @@ GameObject:
   - component: {fileID: 1873350298}
   - component: {fileID: 1873350297}
   - component: {fileID: 1873350299}
+  - component: {fileID: 1873350300}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7269\u4EF6"
   m_TagString: Untagged
@@ -1496,6 +1564,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbfd03feb786b554fab438e13a3051db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1873350300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873350296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048a827eb36ec244ab9659395c1fd680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 10
+  b: 3
+  c: 10
+  d: 10
+  score: 0
+  num1: 5
+  num2: 10
+  B1: 1
+  B2: 0
+  HP: 75
+  item: 1
 --- !u!1 &1884296512
 GameObject:
   m_ObjectHideFlags: 0
