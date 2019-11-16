@@ -537,8 +537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc2e6b362a0c13488b7df043d449555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpHeight: 1
-  Death: 0
+  jumpHeight: 1
+  death: 0
 --- !u!50 &763706393
 Rigidbody2D:
   serializedVersion: 4
@@ -1515,6 +1515,8 @@ GameObject:
   - component: {fileID: 1873350297}
   - component: {fileID: 1873350299}
   - component: {fileID: 1873350300}
+  - component: {fileID: 1873350301}
+  - component: {fileID: 1873350302}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7269\u4EF6"
   m_TagString: Untagged
@@ -1559,7 +1561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873350296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbfd03feb786b554fab438e13a3051db, type: 3}
   m_Name: 
@@ -1571,7 +1573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873350296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 048a827eb36ec244ab9659395c1fd680, type: 3}
   m_Name: 
@@ -1587,6 +1589,34 @@ MonoBehaviour:
   B2: 0
   HP: 75
   item: 1
+--- !u!114 &1873350301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873350296}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6697df9407b4554d897454c27c1ef73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: 1
+  prop: 
+  HP: 100
+--- !u!114 &1873350302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873350296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e143f41dceb634d9b0e40ee09a200d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TR: {fileID: 763706391}
 --- !u!1 &1884296512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,8 +1646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1e058ceb82ae54082b600ad4df674d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scored: 0
-  Best: 0
+  scored: 0
+  best: 0
 --- !u!4 &1884296514
 Transform:
   m_ObjectHideFlags: 0
