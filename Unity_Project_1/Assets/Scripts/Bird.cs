@@ -11,9 +11,13 @@ public class Bird : MonoBehaviour
     public bool death; //是否死亡
     [Header("鋼體")]
     public Rigidbody2D rig2D;
+
+    AudioSource aud;
+    AudioClip S_jump, S_hit, S_add;
+
     //定義欄位或屬性時不能使用API
     //rig2D = GameObject.Find("bird").GetComponent<Rigidbody2D>();
-
+    public GameManager gm;
     public GameObject goScore, goGM;
 
     /// <summary>
@@ -31,7 +35,8 @@ public class Bird : MonoBehaviour
                 //print("按左鍵");
                 rig2D.gravityScale = 1;  //更改小雞鋼體重力指數
                 rig2D.AddForce(new Vector2(0, jumpHeight));  //給予小雞一個向上的力
-                                                             //分數顯示
+                aud.PlayOneShot(S_jump, 1.5f); //播放音效
+                //分數顯示
                 goScore.SetActive(true);
                 //GM啟動
                 goGM.SetActive(true);
@@ -50,24 +55,57 @@ public class Bird : MonoBehaviour
     private void Death()
     {
         //print("死");
+        //print(death);
         death = true;
-        print(death);
+        gm.GameOver();  //呼叫GM裡的GameOver
+    }
+
+    //Is Trigger的物件碰撞事件
+    private void OnTriggerEnter2D(Collider2D hit)
+    {
+        //碰撞.遊戲物件.名稱
+        //print(hit.gameObject.name);
+        if (hit.name == "Pipe_Down" || hit.name == "Pipe_Up")
+        {
+            Death();
+            aud.PlayOneShot(S_hit, 1.5f);
+        }
     }
 
     //事件 碰撞開始 - 碰撞開始時執行一次
     private void OnCollisionEnter2D(Collision2D hit)
     {
         //碰撞.遊戲物件.名稱
-        print(hit.gameObject.name);
-        if (hit.gameObject.name == "地板" || hit.gameObject.name == "Pipe_Down" || hit.gameObject.name == "Pipe_Up")
+        //print(hit.gameObject.name);
+        if (hit.gameObject.name == "地板")
         {
             Death();
+            aud.PlayOneShot(S_hit, 1.5f);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D hit)
+    {
+        if (hit.name == "AddPoint")
+        {
+            gm.AddScored();
+            aud.PlayOneShot(S_add, 1.5f);
         }
     }
 
     //每一幀執行一次  控制物要寫在這邊
-    private void FixedUpdate()
+    private void Update()
     {
         Jump();
     }
+
+    private void Start()
+    {
+        //將檔案指定給欄位
+        S_jump = (AudioClip)Resources.Load("Sound/Jump");
+        S_hit = (AudioClip)Resources.Load("Sound/Hit");
+        S_add = (AudioClip)Resources.Load("Sound/Add");
+        aud = GameObject.Find("bird").GetComponent<AudioSource>();
+    }
+
 }

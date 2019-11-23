@@ -22,6 +22,10 @@ public class Ground : MonoBehaviour
      /// </summary>
     private void Move()
     {
+        if (GameManager.IsOver)
+        {
+            return;
+        }
         //官方 API函式 -> 物件.位移(x ,y ,z)
         //Time.deltaTime -> 每幀的時間,每一台電腦都不一樣
         ground.Translate(-speed * Time.deltaTime, 0, 0);

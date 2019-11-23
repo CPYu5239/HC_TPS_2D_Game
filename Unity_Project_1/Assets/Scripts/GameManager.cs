@@ -1,14 +1,23 @@
 ﻿using UnityEngine;
+using UnityEngine.UI; //引用UI
 
 public class GameManager : MonoBehaviour
 {
     [Header("目前分數")]
     public int scored = 0;
     [Header("最高分數")]
-    public int best;
+    public int best = 0;
     //GameObject可存放場景上的遊戲物件以及專案內的預置物
     private GameObject Pipe;
     private Transform Bird;
+
+    Text txt;
+    public Text BestTxt;
+
+    [Header("遊戲結算畫面")]
+    public GameObject Over;
+    //靜態成員不會出現在屬性面板(Inspector)上
+    public static bool IsOver;
 
     private void Start()
     {
@@ -17,6 +26,7 @@ public class GameManager : MonoBehaviour
 
         //專案內的預置物取得方法要用Resources.Load("物件名稱")，但必須要將物件或欲置物放在一個Resources資料夾內。
         Pipe = (GameObject)Resources.Load("Pipe");
+        txt = GameObject.Find("Points").GetComponent<Text>();
     }
 
     private void Update()
@@ -32,6 +42,10 @@ public class GameManager : MonoBehaviour
     public void AddScored()
     {
         scored++;
+        print(scored);
+        txt.text = scored.ToString();
+        IsHeighScore();
+        print(best);
     }
 
     /// <summary>
@@ -43,16 +57,20 @@ public class GameManager : MonoBehaviour
         {
             best = scored;
         }
+        //BestTxt = GameObject.Find("Points_2").GetComponent<Text>();
+        BestTxt.text = best.ToString();
     }
 
     /// <summary>
     /// 判斷遊戲是否結束
     /// </summary>
     /// <returns>是否結束</returns>
-    private bool IsOver()
+    public void GameOver()
     {
-        bool isOver = false;
-        return isOver;
+        Over.SetActive(true);
+        IsOver = true;
+        //停止重複調用的方法名稱(停止InvokeRepeating())
+        CancelInvoke("SpawnPipe");
     }
 
     /// <summary>
