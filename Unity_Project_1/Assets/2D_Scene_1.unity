@@ -538,7 +538,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpHeight: 200
+  angle: 10
   death: 0
+  rig2D: {fileID: 763706393}
+  goScore: {fileID: 1187654372}
+  goGM: {fileID: 1884296512}
 --- !u!50 &763706393
 Rigidbody2D:
   serializedVersion: 4
@@ -844,7 +848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1187654373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1523,7 +1527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1873350297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,7 +1637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1884296513
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 494}
   m_MaxSize: {x: 22006, y: 14044}
   vertical: 0
-  controlID: 136
+  controlID: 134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,9 +301,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 70300000
-      m_LastClickedID: 12400
-      m_ExpandedIDs: 6afbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6afbffff4c300000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -404,34 +404,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 82
   m_LastFolders:
-  - Assets
+  - Assets/Resources
   m_LastFoldersGridSize: 82
   m_LastProjectPath: C:\Users\A\Desktop\GitHub\HC_TPS_2D_Game\Unity_Project_1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac2c0000
-    m_LastClickedID: 11436
-    m_ExpandedIDs: 00000000ac2c000000ca9a3b
+    m_SelectedIDs: 9e2e0000
+    m_LastClickedID: 11934
+    m_ExpandedIDs: 00000000ae2c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Pictures
-      m_OriginalName: Pictures
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11680
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac2c0000
+    m_ExpandedIDs: 00000000ae2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 1.1754111, y: -2.3721395, z: -172.39844}
     speed: 2
-    m_Value: {x: 1.1754111, y: -2.3721395, z: -172.39844}
+    m_Value: {x: 3.1487885, y: -1.2437565, z: -6.2330008}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 29.269514
     speed: 2
-    m_Value: 29.269514
+    m_Value: 10.522611
   m_Ortho:
     m_Target: 1
     speed: 2

@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Bird = GameObject.Find("bird").GetComponent<Transform>();
-        Bird.Rotate(0, 0, 1000);
+        //Bird.Rotate(0, 0, 1000);
     }
 
 
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void SpawnPipe()
     {
-        print("生成水管");
+        //print("生成水管");
         Vector3 pos = new Vector3(7, Random.Range(-1f,2f), 0);
 
         //生成(物件)

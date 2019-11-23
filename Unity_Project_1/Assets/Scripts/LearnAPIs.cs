@@ -33,10 +33,9 @@ public class LearnAPIs : MonoBehaviour
         AS.Stop();
     }
 
-    private void Update()
+    /*private void Update()
     {
         //直接宣告的區域類別
-        Transform Bird = GameObject.Find("bird").GetComponent<Transform>();
-        Bird.Rotate(0, 0, 1000);
-    }
+        //Transform Bird = GameObject.Find("bird").GetComponent<Transform>();
+    }*/
 }
