@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour
 	//遊戲開始以及載入場景時都會執行
     private void Start()
     {
+		Ground.speed = 3f;
 		//設定螢幕解析度API
-		Screen.SetResolution(720, 1280, false);
+		Screen.SetResolution(450, 800, false);
         //重複調用(要調用的"方法名稱",開始時間,間隔時間)
         InvokeRepeating("SpawnPipe", 0, 3f);
 

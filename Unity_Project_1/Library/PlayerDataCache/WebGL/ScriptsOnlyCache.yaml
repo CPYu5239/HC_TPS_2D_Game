@@ -59,39 +59,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 9676}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 9824}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 9864}
     - Class: 114
-      Script: {instanceID: 14530}
+      Script: {instanceID: 10104}
     - Class: 114
-      Script: {instanceID: 14658}
+      Script: {instanceID: 10232}
     - Class: 114
-      Script: {instanceID: 14668}
+      Script: {instanceID: 10242}
     - Class: 114
-      Script: {instanceID: 14706}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 14904}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 14934}
+      Script: {instanceID: 10512}
     - Class: 114
-      Script: {instanceID: 14996}
+      Script: {instanceID: 10574}
     - Class: 114
-      Script: {instanceID: 15164}
+      Script: {instanceID: 10742}
     - Class: 114
-      Script: {instanceID: 15422}
+      Script: {instanceID: 11016}
     - Class: 114
-      Script: {instanceID: 15448}
+      Script: {instanceID: 11042}
     - Class: 114
-      Script: {instanceID: 15676}
+      Script: {instanceID: 11272}
     - Class: 114
-      Script: {instanceID: 15712}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 15728}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 15766}
+      Script: {instanceID: 11362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -580,4 +580,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/2D_Scene_1.unity
-  playerPath: C:/Users/A/Desktop/GitHub/HC_TPS_2D_Game/Flying Bird(Web)
+  playerPath: C:/Users/A/Desktop/GitHub/HC_TPS_2D_Game/FlyingBird(Web)
