@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 403787450}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884296513}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &403787450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +330,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501462603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884296513}
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &501462603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,7 +1409,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 50.05, y: 0.32}
+  m_Size: {x: 150, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1401,7 +1423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622883332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 92.08, y: -4.388, z: 0}
+  m_LocalPosition: {x: 280, y: -4.388, z: 0}
   m_LocalScale: {x: 3.7973158, y: 3.7973158, z: 3.7973158}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1419,7 +1441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257cf728accced342b932ade11205c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
   ground: {fileID: 1622883334}
 --- !u!61 &1622883336
 BoxCollider2D:
@@ -1439,13 +1460,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 50.05, y: 0.32}
+    newSize: {x: 150, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50.5, y: 0.25}
+  m_Size: {x: 150, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &1791739873
 GameObject:

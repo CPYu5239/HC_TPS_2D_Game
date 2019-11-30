@@ -93,7 +93,7 @@ public class Bird : MonoBehaviour
         }
     }
 
-    //每一幀執行一次  控制物要寫在這邊
+    //FixedUpdate是每一幀執行一次,控制物理多寫在這邊
     private void Update()
     {
         Jump();

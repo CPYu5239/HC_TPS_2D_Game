@@ -3,8 +3,7 @@
 public class Ground : MonoBehaviour
 {
     [Header("地板移動速度")]
-    [Range(0.1f, 5f)]
-    public float speed = 0.1f; //地板移動速度變數(定義欄位 filed)
+    public static float speed = 3f; //地板移動速度變數(定義欄位 filed)
 
     [Header("地板變型元件")]
     public Transform ground;
